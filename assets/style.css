@@ -1,0 +1,53 @@
+#jumbo {
+    width: 96%;
+    margin-right: 2%;
+    margin-left: 2%;
+    background-color: cornflowerblue;
+}
+
+h1 {
+    text-align: center !important;
+}
+
+.lead {
+    text-align: center !important;
+}
+
+#trainTitle,
+#trainTime,
+#addTrain {
+    text-align: center !important;
+    font-weight: bold;
+}
+
+#currentTrainSchedule {
+    width: 96%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+#trainTitle,
+#addTrain {
+    background-color: dodgerblue !important;
+}
+
+#trainName,
+#destination,
+#frequency,
+#nextArrival,
+#minutesAway {
+    text-align: center;
+}
+
+#addTrainCard {
+    width: 96%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 10%;
+}
+
+#submit {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}

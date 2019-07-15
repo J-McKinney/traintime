@@ -10,8 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 </head>
 
 <body>
@@ -39,11 +39,15 @@
                 <div class="col-sm-2" id="trainTime">Minutes Away:</div>
             </div>
 
-            <div class="panel-body">
-                <table class="table table-striped" id="trainTable"></table>
-            </div>
+            <hr>
 
             <div class="card-body">
+                <div id="train-Table"></div>
+            </div>
+
+            <hr>
+
+            <!-- <div class="card-body">
                 <div class="row">
                     <div class="col-sm-2" id="nameOfTrain"></div>
                     <div class="col-sm-3" id="yourDestination"></div>
@@ -51,7 +55,7 @@
                     <div class="col-sm-2" id="trainsArrival"></div>
                     <div class="col-sm-2" id="minutesAway"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <br>
@@ -70,15 +74,13 @@
                     <input type="text" class="form-control" id="inputDestination" placeholder="Destination">
                 </div>
                 <div class="form-group">
-                    <label for="inputFirstTrain"><strong>First Train Time (HH:mm - military time)</strong></label>
+                    <label for="inputTrainTime"><strong>First Train Time (HH:mm - military time)</strong></label>
                     <input type="text" class="form-control" id="inputTrainTime" placeholder="Departure Time">
                 </div>
-                <!-- going to try and figure out if this <input type="time"> works -->
                 <div class="form-group">
                     <label for="inputFrequency"><strong>Frequency (min)</strong></label>
                     <input type="text" class="form-control" id="inputFrequency" placeholder="Frequency (min)">
                 </div>
-                <!-- going to work on <input type="number"> is going to work out too -->
                 <hr>
                 <button type="submit" class="btn btn-success" id="submit">Submit</button>
         </form>

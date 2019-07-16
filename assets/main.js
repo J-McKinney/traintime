@@ -1,5 +1,26 @@
 $(document).ready(function () {
 
+    // function display_c() {
+    //     var refresh = 1000; // Refresh rate in milli seconds
+    //     mytime = setTimeout('display_ct()', refresh)
+    // }
+
+    // function display_ct() {
+    //     var x = new Date()
+    //     document.getElementById('ct').innerHTML = x;
+    //     display_c();
+    // }
+
+    // window.onload = startInterval;
+    // function startInterval() {
+    //     setInterval("startTime();", 1000);
+    // }
+
+    // function startTime() {
+    //     var now = new Date();
+    //     document.getElementById('time').innerHTML = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+    // }
+
     var config = {
         apiKey: "AIzaSyAaoKp0Xod_gObg2BIlujtAC5yg4kuMFUQ",
         authDomain: "traintime-ba953.firebaseapp.com",

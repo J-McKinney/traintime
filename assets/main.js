@@ -1,25 +1,15 @@
 $(document).ready(function () {
 
-    // function display_c() {
-    //     var refresh = 1000; // Refresh rate in milli seconds
-    //     mytime = setTimeout('display_ct()', refresh)
-    // }
+    var datetime = null,
+        date = null;
+    var update = function () {
+        date = moment(new Date())
+        datetime.html(date.format('MMMM Do YYYY, h:mm:ss:S'));
+    };
+    datetime = $('#currentTime')
+    update();
+    setInterval(update, 1);
 
-    // function display_ct() {
-    //     var x = new Date()
-    //     document.getElementById('ct').innerHTML = x;
-    //     display_c();
-    // }
-
-    // window.onload = startInterval;
-    // function startInterval() {
-    //     setInterval("startTime();", 1000);
-    // }
-
-    // function startTime() {
-    //     var now = new Date();
-    //     document.getElementById('time').innerHTML = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
-    // }
 
     var config = {
         apiKey: "AIzaSyAaoKp0Xod_gObg2BIlujtAC5yg4kuMFUQ",
